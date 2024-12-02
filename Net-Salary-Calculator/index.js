@@ -1,7 +1,7 @@
 function calculateNetSalary(basicSalary, benefits) {
   const grossSalary = basicSalary + benefits;
 
-  // tax pay as you earn 
+  // The tax one  pay as you earn 
   let paye;
   if (grossSalary <= 24000) {
       paye = grossSalary * 0.1;
@@ -85,7 +85,7 @@ function calculateNetSalary(basicSalary, benefits) {
   // Net Salary
   const netSalary = grossSalary - totalDeductions;
 
-  // Output Results
+  // Output Results of all the deductions and the salary one recieves
   console.log(`Gross Salary: Ksh ${grossSalary}`);
   console.log(`PAYE Deduction: Ksh ${paye}`);
   console.log(`NHIF Deduction: Ksh ${nhif}`);
