@@ -35,3 +35,4 @@ function gradeGenerator(marks) {
   }
   gradeGenerator(50)
   gradeGenerator(-0.9)
+  

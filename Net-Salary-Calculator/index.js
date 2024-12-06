@@ -1,5 +1,8 @@
+//onst readline = require("readline-sync")
 function calculateNetSalary(basicSalary, benefits) {
   const grossSalary = basicSalary + benefits;
+  
+  
 
   // The tax one  pay as you earn 
   let paye;
@@ -95,4 +98,6 @@ function calculateNetSalary(basicSalary, benefits) {
 }
 
 // execute your  salary here !!!
-calculateNetSalary(50000, 10000); 
+ calculateNetSalary(300000,1000000);
+//
+
