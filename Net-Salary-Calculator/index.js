@@ -1,4 +1,4 @@
-//onst readline = require("readline-sync")
+
 function calculateNetSalary(basicSalary, benefits) {
   const grossSalary = basicSalary + benefits;
   
