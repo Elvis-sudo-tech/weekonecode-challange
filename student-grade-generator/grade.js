@@ -1,38 +1,26 @@
-// on this assignment we are creating a function for a lec to generate grades for students.
-
 function gradeGenerator(marks) {
-
-    const grade = (marks);
-  
-    // On this part I am declaring the conditions for the grade generetor
-  
-    if (grade < 0 || grade > 100 || (!grade)) { //! is to declare not a score
-  
-        console.log("Invalid input. Please enter a number between 0 to 100.");// and on this part we are going to have this out put
-  
-      } else if (grade > 79) {
-  
-        console.log("Grade: A");
-  
-      } else if (grade >= 60) {
-  
-        console.log("Grade: B");
-  
-      } else if (grade >= 49) {
-  
-        console.log("Grade: C");
-  
-      } else if (grade >= 40) {
-  
-        console.log("Grade: D");
-  
-      } else {
-  
-        console.log("Grade: E");
-  
-      }
-  
+  // Validate input: ensure it's a number between 0 and 100
+  if (typeof marks !== "number" || marks < 0 || marks > 100) {
+      console.log("Invalid input. Please enter a number between 0 and 100.");
+      return; // Exit the function if the input is invalid
   }
-  gradeGenerator(50)
-  gradeGenerator(-0.9)
-  
+
+  // Determine the grade based on the marks
+  if (marks > 79) {
+      console.log("Grade: A");
+  } else if (marks >= 60) {
+      console.log("Grade: B");
+  } else if (marks >= 49) {
+      console.log("Grade: C");
+  } else if (marks >= 40) {
+      console.log("Grade: D");
+  } else {
+      console.log("Grade: E");
+  }
+}
+
+// Test cases
+gradeGenerator(50);  // Grade: C
+gradeGenerator(-0.9); // Invalid input. Please enter a number between 0 and 100.
+gradeGenerator(85);   // Grade: A
+gradeGenerator(39);   // Grade: E
