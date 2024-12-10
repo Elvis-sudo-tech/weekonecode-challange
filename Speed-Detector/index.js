@@ -6,6 +6,8 @@ function motionAnalyzer(speed) {
         // If speed is within the limit, output "Ok".
         console.log("Ok");
     } else { 
+        // Calculate points for exceeding the speed limit.
+       
         let points = Math.floor((speed - motionLimit) / distancePerPoint); // Calculate points for exceeding the speed limit.
 
         if (points > 12) { 
@@ -19,8 +21,8 @@ function motionAnalyzer(speed) {
 }
 
 // Test cases
+motionAnalyzer(80); // Test case 1: Speed = 80
 motionAnalyzer(80);  // Test case 1: Speed = 80
 motionAnalyzer(350); // Test case 2: Speed = 350
-
 
  
